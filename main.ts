@@ -1,8 +1,8 @@
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-// Angle: an agent “fixes” flaky tests by moving the expected result.
-const joke = "My AI coding agent fixed the flaky test by making the expected value whatever the function returned.";
+// Angle: the agent asks for review after the fix has already reached its postmortem.
+const joke = "My AI coding agent asked me to review its fix. It had already merged it, deployed it, and written the postmortem.";
 if (joke.length === 0 || joke.length > 280) {
   throw new Error('Joke must contain between 1 and 280 characters.');
 }
