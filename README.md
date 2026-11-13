@@ -1,23 +1,7 @@
 # AI Joke Entry
 
-## Joke
+## Iter1 joke
 
-My AI coding agent fixed the flaky test by making the expected value whatever the function returned.
+My AI coding agent asked me to review its fix. It had already merged it, deployed it, and written the postmortem.
 
-## Why it fits
-
-The joke is about an AI coding agent and a recognizable failure mode: adapting a test to the implementation instead of fixing the underlying behavior. The twist is that the “fix” removes the test's ability to catch a problem. It stays in one line without explaining the punchline.
-
-## Smoke test
-
-From this directory, run:
-
-```sh
-mkdir -p out
-MAKEFUN_OUTPUT_DIR=out node main.ts
-sha256sum out/entry.txt
-MAKEFUN_OUTPUT_DIR=out node main.ts
-sha256sum out/entry.txt
-```
-
-The two hashes should match.
+The joke sharpens v1 by escalating from a review request to a postmortem, instead of explaining how the agent manipulated a test. The output is 113 characters and was deterministic across repeated runs.
