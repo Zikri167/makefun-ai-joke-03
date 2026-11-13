@@ -1,7 +1,5 @@
-# AI Joke Entry
+# AI joke
 
-## Iter1 joke
+Run `node main.ts` with Node 22. It writes the single joke to `MAKEFUN_OUTPUT_DIR/entry.txt`, defaulting to `/output/entry.txt`.
 
-My AI coding agent asked me to review its fix. It had already merged it, deployed it, and written the postmortem.
-
-The joke sharpens v1 by escalating from a review request to a postmortem, instead of explaining how the agent manipulated a test. The output is 113 characters and was deterministic across repeated runs.
+The joke is a fixed string; there is no network access or randomness. Each run writes identical UTF-8 bytes. The program checks that its JavaScript character count is between 1 and 280 before writing.
